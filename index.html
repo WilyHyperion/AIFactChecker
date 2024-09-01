@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Statement to fact check">
+    <button onclick="fetch('/factcheck',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({statement: document.getElementById('name').value})
+    }).then(res => res.json()).then(data => {
+        console.log(data);
+        window.alert(data.value);
+    })">Fact Check</button>
+</body>
+</html>
