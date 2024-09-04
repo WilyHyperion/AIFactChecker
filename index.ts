@@ -15,6 +15,9 @@ const server = Bun.serve({
             let body = await request.json();
             return new Response(await gemini.getResponse( body.statement));
         }
+        if(path[0] == "youtube"){
+            return (await youtube.getResponse(""));
+        }
         return new Response("lego fortnite");
     },
 })

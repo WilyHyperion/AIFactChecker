@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="name" placeholder="Statement to fact check">
+    <input type="text" id="name" placeholder="Statement to fact check" />
     <button onclick="fetch('/factcheck',  {
         method: 'POST',
         headers: {
@@ -17,5 +17,11 @@
         console.log(data);
         window.alert(data.value);
     })">Fact Check</button>
+    <input type="text" id="vidid" placeholder="get youtube vid" />
+    <video id = "video">
+         </video>
+    <button onclick="
+    document.getElementById('video').src = '/youtube/' + document.getElementById('vidid').value;
+    ">Get Youtube</button>
 </body>
 </html>
