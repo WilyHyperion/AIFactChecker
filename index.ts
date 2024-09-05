@@ -1,9 +1,13 @@
 import youtube from "./youtube";
 import gemini  from "./gemini";
 import Bun from "bun";
+
 const server = Bun.serve({
     port:3000,
     async fetch(request, server) {
+        if (server.upgrade(request)) {
+            return new Response(null, { status: 101 });
+          }
         let path = request.url.split("/").slice(3)
         console.log(path)
         if(path[0] == "test") {
@@ -20,6 +24,15 @@ const server = Bun.serve({
         }
         return new Response("lego fortnite");
     },
+    websocket: {
+        message(ws, msg) {
+            let statement = JSON.parse(msg as any).data;
+            gemini.getResponse(statement).then((response) => {
+                console.log(JSON.parse(response).value);
+                ws.send(JSON.stringify({data: JSON.parse(response).value, fact: statement}));
+            });
+        }
+    }
 })
 
 
