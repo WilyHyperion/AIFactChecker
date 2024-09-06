@@ -88,11 +88,12 @@ async function check() {
 let sent = 0;
 const CHUNK_SIZE = 500;
 async function checkSend() {
-  let toSend = transcript.substring(sent);
+  let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE)
+  console.log(sent);
   console.log(toSend.length);
-  if (toSend.length > CHUNK_SIZE) {
+  if (toSend.length >= CHUNK_SIZE) {
+    ws.send(JSON.stringify({data: toSend}));
     sent += CHUNK_SIZE;
-    ws.send(JSON.stringify({data:transcript.substring(sent - 50, sent)}));
   }
 }
 

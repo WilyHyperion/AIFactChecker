@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(process.env.API_GEMINI,
 
 const systemInstruction = "You are an advanced fact checking AI. Given a statement, you must determine the validity of the statement. Respond with only the words 'true,' 'false,' 'should not answer.' You should return 'true' if the statement is verifiably true, 'false' if it is blatantly incorrect (even if the statement is phrased as an opinion), 'should not answer' if the statement is an opinion with no claim about reality, or if the claim is intuitively verifiable (and thus too minor of a statement to have to fact check). Still respond to poltical statements with true or false";
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction : systemInstruction });
-const splitterSystem  = "You are a formating AI. Given a chunk of text from a debate, split the text into groups by logical statements. If a statement appears incomplete do not return it. Format your response with | as a delimiter between statements. For example statement1|statement2|statement3";
+const splitterSystem  = "You are a formating AI. Given a chunk of text from a debate, split the text into groups by statements or claims. If a statement appears cut off still respond it. Format your response with | as a delimiter between statements, and always respond with a rehash of the original, never give reasoning. For example statement1|statement2|statement3";
 const splitterModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction : splitterSystem });
 async function splitByStatement(text: any)  {
   const prompt = `${text}`;
