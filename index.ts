@@ -26,22 +26,14 @@ const server = Bun.serve({
   },
   websocket: {
     message(ws, msg) {
-      let chunk = JSON.parse(msg as any).data;
-      console.log(chunk);
-      let statements = gemini.splitByStatement(chunk);
-       statements.then((s) => {
-        for (let statement of s) {
-        gemini.getResponse(statement).then((response) => {
-          console.log(JSON.parse(response).value);
-          ws.send(
-            JSON.stringify({
-              data: JSON.parse(response).value,
-              fact: statement,
-            })
-          );
-        });
-        }
-    });
+      let data = JSON.parse(msg as any)
+      let title = data.title
+      let chunk = data.data;
+      console.log(title);
+      console.log(title)
+      gemini.getResponseBulk(chunk, title).then((p) => {
+      ws.send(p)
+      })
     },
   },
 });

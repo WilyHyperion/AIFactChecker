@@ -4,6 +4,9 @@ chrome.runtime.onMessage.addListener(function (message) {
     console.log("activated");
     activate();
   }
+  else if (message.action === 'toggleCaptions') {
+    toggleCaptions();
+  }
 });
 
 let facts = [];
@@ -13,8 +16,12 @@ const host = "ws://localhost:3000";
 let transcript = "";
 let ws;
 let factElement;
+let title;
+let captionsVisible = true;
+
 
 async function activate() {
+  title = document.querySelectorAll('#above-the-fold > #title > h1')[0].children[0].innerHTML
   let videoslist = document.querySelectorAll("video");
 
   // Open a websocket connection
@@ -23,8 +30,10 @@ async function activate() {
     console.log("connected");
   };
   ws.onmessage = function (event) {
-    console.log("received: " + event.data);
-    addFact(JSON.parse(event.data));
+    let json = JSON.parse(event.data)
+    for(let v of json){
+      addFact(v);
+    }
   };
   video = videoslist[0];
   subtitles = document.querySelectorAll(".ytp-caption-segment");
@@ -48,6 +57,14 @@ async function activate() {
   setInterval(check, 1000);
 }
 
+function toggleCaptions() {
+  const captions = document.querySelectorAll('.caption-window');
+  captions.forEach(caption => {
+    caption.style.display = captionsVisible ? 'none' : 'block';
+  });
+  captionsVisible = !captionsVisible;
+}
+
 function createSidebar() {
   // Create sidebar element
   factElement = document.createElement("div");
@@ -67,6 +84,16 @@ function createSidebar() {
 }
 let lastlineadded = "";
 async function check() {
+
+  //turn on captions
+  function toggleCaptions() {
+    const captions = document.querySelectorAll('.caption-window');
+    captions.forEach(caption => {
+      caption.style.display = captionsVisible ? 'none' : 'block';
+    });
+    captionsVisible = !captionsVisible;
+  }
+  
   let currentLine = "";
   for (let ob of subtitles) {
     currentLine += ob.innerText + " ";
@@ -88,11 +115,12 @@ async function check() {
 let sent = 0;
 const CHUNK_SIZE = 500;
 async function checkSend() {
+  console.log(title)
   let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE)
   console.log(sent);
   console.log(toSend.length);
   if (toSend.length >= CHUNK_SIZE) {
-    ws.send(JSON.stringify({data: toSend}));
+    ws.send(JSON.stringify({title: title,  data: toSend}));
     sent += CHUNK_SIZE;
   }
 }
@@ -111,30 +139,37 @@ async function addFact(params) {
 
   // Add appropriate styling based on the fact's validity
 
-  if (params.data.includes("true")) {
+  if (params.validity.includes("true")) {
    // alert('true: \n' + params.fact)
     fact.style.backgroundColor = "#d4edda"; // Green for true
     fact.innerHTML = `
-      <div style="display: flex; align-items: center;">
-        <span class="material-icons" style="color: green; margin-right: 10px;">check_circle</span>
-        <strong>True</strong>
-      </div>
-      <div class="fact-detail" style="display: block;">
-        <p><strong>Statement:</strong> ${params.fact}</p>
-        <p><strong>Reasoning:</strong> ${params.reasoning}</p>
-      </div>
-    `;
-  } else if(params.data.includes("false")) {
+    <div style="display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16" >
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          <g>
+            <path style="fill:#010002;" d="M155.139,0C69.598,0,0,69.598,0,155.139c0,85.547,69.598,155.139,155.139,155.139
+              c85.547,0,155.139-69.592,155.139-155.139C310.277,69.598,240.686,0,155.139,0z M144.177,196.567L90.571,142.96l8.437-8.437
+              l45.169,45.169l81.34-81.34l8.437,8.437L144.177,196.567z"/>
+          </g>
+        </svg>
+      <strong>True</strong>
+    </div>
+    <div class="fact-detail" style="display: block;">
+      <p><strong>Statement:</strong> ${params.statement}</p>
+      <p><strong>Reasoning:</strong> ${params.reason}</p>
+    </div>
+  `;
+  } else if(params.validity.includes("false")) {
   //  alert('false: \n' + params.fact)
     fact.style.backgroundColor = "#f8d7da"; // Red for false
     fact.innerHTML = `
       <div style="display: flex; align-items: center;">
-        <span class="material-icons" style="color: red; margin-right: 10px;">warning</span>
+        <span class="material-icons" style="#f2ff00; margin-right: 10px;">warning</span>
         <strong>False</strong>
       </div>
       <div class="fact-detail" style="display: block;">
-        <p><strong>Statement:</strong> ${params.fact}</p>
-        <p><strong>Reasoning:</strong> ${params.reasoning}</p>
+        <p><strong>Statement:</strong> ${params.statement}</p>
+        <p><strong>Reasoning:</strong> ${params.reason}</p>
       </div>
     `;
   } else{
