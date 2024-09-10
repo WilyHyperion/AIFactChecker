@@ -38,4 +38,5 @@ const server = Bun.serve({
   },
 });
 
+console.log("Server running on port 3000");
 //https://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/

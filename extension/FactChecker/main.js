@@ -3,8 +3,7 @@ chrome.runtime.onMessage.addListener(function (message) {
   if (message.command === "activate") {
     console.log("activated");
     activate();
-  }
-  else if (message.action === 'toggleCaptions') {
+  } else if (message.action === "toggleCaptions") {
     toggleCaptions();
   }
 });
@@ -21,7 +20,11 @@ let captionsVisible = true;
 
 
 async function activate() {
-  title = document.querySelectorAll('#above-the-fold > #title > h1')[0].children[0].innerHTML
+  if (factElement) {
+    return;
+  }
+  title = document.querySelectorAll("#above-the-fold > #title > h1")[0]
+    .children[0].innerHTML;
   let videoslist = document.querySelectorAll("video");
 
   // Open a websocket connection
@@ -30,8 +33,8 @@ async function activate() {
     console.log("connected");
   };
   ws.onmessage = function (event) {
-    let json = JSON.parse(event.data)
-    for(let v of json){
+    let json = JSON.parse(event.data);
+    for (let v of json) {
       addFact(v);
     }
   };
@@ -39,15 +42,17 @@ async function activate() {
   subtitles = document.querySelectorAll(".ytp-caption-segment");
 
   // Get HTML head element
-  let head = document.getElementsByTagName('HEAD')[0];
+  let head = document.getElementsByTagName("HEAD")[0];
 
   // Create new link Element
-  let link = document.createElement('link');
+  let link = document.createElement("link");
 
   // Set the attributes for link element
-  link.rel = 'stylesheet';
-  link.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
-  link.integrity = "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH";
+  link.rel = "stylesheet";
+  link.href =
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+  link.integrity =
+    "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH";
 
   // Append link element to HTML head
   head.appendChild(link);
@@ -58,16 +63,44 @@ async function activate() {
 }
 
 function toggleCaptions() {
-  const captions = document.querySelectorAll('.caption-window');
-  captions.forEach(caption => {
-    caption.style.display = captionsVisible ? 'none' : 'block';
+  const captions = document.querySelectorAll(".caption-window");
+  captions.forEach((caption) => {
+    caption.style.display = captionsVisible ? "none" : "block";
   });
   captionsVisible = !captionsVisible;
 }
-
+let dragx, dragy, oldx, oldy;
+function move(e) {
+  e.preventDefault();
+  oldx = dragx - e.clientX;
+  oldy = dragy - e.clientY;
+  dragx = e.clientX;
+  dragy = e.clientY;
+  factElement.style.top = factElement.offsetTop - oldy + "px";
+  factElement.style.left = factElement.offsetLeft - oldx + "px";
+}
+function createDragger() {
+  let dragger = document.createElement("div");
+  dragger.style.width = "100%";
+  dragger.style.height = "10px";
+  dragger.style.position = "absolute";
+  dragger.style.top = "0";
+  dragger.style.left = "0";
+  dragger.style.cursor = "move";
+  dragger.style.userSelect = "none";
+  dragelement = dragger;
+  dragger.style.backgroundColor = "rgba(50,50,50,1)";
+  dragger.addEventListener("mousedown", function (e) {
+    document.addEventListener("mousemove", move);
+  });
+  factElement.addEventListener("mouseup", function () {
+    document.removeEventListener("mousemove", move);
+  });
+  return dragger;
+}
 function createSidebar() {
-  // Create sidebar element
   factElement = document.createElement("div");
+  factElement.appendChild(createDragger());
   factElement.classList.add("card");
   factElement.style.position = "fixed";
   factElement.style.top = "5%";
@@ -76,31 +109,29 @@ function createSidebar() {
   factElement.style.height = "80vh";
   factElement.style.backgroundColor = "rgba(1,1,1,0.1)";
   factElement.style.overflow = "scroll";
-  factElement.style.zIndex = "1000";
+  factElement.style.zIndex = "2301";
   factElement.style.border = "1px solid black";
   factElement.style.padding = "10px";
+  factElement.style.paddingTop = "20px";
   factElement.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
+  factElement.style.resize = "both";
+
   document.body.appendChild(factElement);
 }
+
 let lastlineadded = "";
 async function check() {
-
-  //turn on captions
-  function toggleCaptions() {
-    const captions = document.querySelectorAll('.caption-window');
-    captions.forEach(caption => {
-      caption.style.display = captionsVisible ? 'none' : 'block';
-    });
-    captionsVisible = !captionsVisible;
-  }
-  
   let currentLine = "";
   for (let ob of subtitles) {
     currentLine += ob.innerText + " ";
   }
-  if (transcript.substring(transcript.length - currentLine.length) !== currentLine) {
-    if(currentLine.includes(lastlineadded)) {
-      newsection = currentLine.substring(currentLine.indexOf(lastlineadded) + lastlineadded.length);
+  if (
+    transcript.substring(transcript.length - currentLine.length) !== currentLine
+  ) {
+    if (currentLine.includes(lastlineadded)) {
+      newsection = currentLine.substring(
+        currentLine.indexOf(lastlineadded) + lastlineadded.length
+      );
     } else {
       newsection = currentLine;
     }
@@ -115,12 +146,12 @@ async function check() {
 let sent = 0;
 const CHUNK_SIZE = 500;
 async function checkSend() {
-  console.log(title)
-  let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE)
+  console.log(title);
+  let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE);
   console.log(sent);
   console.log(toSend.length);
   if (toSend.length >= CHUNK_SIZE) {
-    ws.send(JSON.stringify({title: title,  data: toSend}));
+    ws.send(JSON.stringify({ title: title, data: toSend }));
     sent += CHUNK_SIZE;
   }
 }
@@ -140,7 +171,7 @@ async function addFact(params) {
   // Add appropriate styling based on the fact's validity
 
   if (params.validity.includes("true")) {
-   // alert('true: \n' + params.fact)
+    // alert('true: \n' + params.fact)
     fact.style.backgroundColor = "#d4edda"; // Green for true
     fact.innerHTML = `
     <div style="display: flex; align-items: center;">
@@ -159,12 +190,12 @@ async function addFact(params) {
       <p><strong>Reasoning:</strong> ${params.reason}</p>
     </div>
   `;
-  } else if(params.validity.includes("false")) {
-  //  alert('false: \n' + params.fact)
+  } else if (params.validity.includes("false")) {
+    //  alert('false: \n' + params.fact)
     fact.style.backgroundColor = "#f8d7da"; // Red for false
     fact.innerHTML = `
       <div style="display: flex; align-items: center;">
-        <span class="material-icons" style="#f2ff00; margin-right: 10px;">warning</span>
+<svg fill="#ff0017" width="16" height="16" viewBox="-1.7 0 20.4 20.4" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M16.406 10.283a7.917 7.917 0 1 1-7.917-7.917 7.916 7.916 0 0 1 7.917 7.917zM9.48 14.367a1.003 1.003 0 1 0-1.004 1.003 1.003 1.003 0 0 0 1.004-1.003zM7.697 11.53a.792.792 0 0 0 1.583 0V5.262a.792.792 0 0 0-1.583 0z"/></svg>
         <strong>False</strong>
       </div>
       <div class="fact-detail" style="display: block;">
@@ -172,8 +203,8 @@ async function addFact(params) {
         <p><strong>Reasoning:</strong> ${params.reason}</p>
       </div>
     `;
-  } else{
-    console.log('should not answer so didnt add thing');
+  } else {
+    console.log("should not answer so didnt add thing");
     return;
   }
 
