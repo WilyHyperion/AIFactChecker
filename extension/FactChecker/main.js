@@ -16,7 +16,7 @@ let transcript = "";
 let ws;
 let factElement;
 let title;
-let captionsVisible = true;
+let captionsVisible1 = false;
 
 
 async function activate() {
@@ -63,12 +63,45 @@ async function activate() {
 }
 
 function toggleCaptions() {
-  const captions = document.querySelectorAll(".caption-window");
-  captions.forEach((caption) => {
-    caption.style.display = captionsVisible ? "none" : "block";
-  });
   captionsVisible = !captionsVisible;
 }
+
+
+function turnOffCaptions() {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .ytp-caption-segment {
+      font-size: 0px !important;
+      opacity: 0 !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
+function turnOnCaptions() {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .ytp-caption-segment {
+      font-size: 15px !important;
+      opacity: 0 !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+// Call the function to inject the CSS
+turnOffCaptions();
+function captionsVisible(){
+  if(captionsVisible1 == false){
+    turnOffCaptions();
+  }
+  else{
+    turnOnCaptions();
+  }
+}
+
+
+
+
 let dragx, dragy, oldx, oldy;
 function move(e) {
   e.preventDefault();
@@ -167,22 +200,17 @@ async function addFact(params) {
   fact.style.borderRadius = "5px";
   fact.style.boxShadow = "0 0 5px rgba(0,0,0,0.2)";
   fact.classList.add("fact-box");
+  fact.style.fontSize = "12px";  // Adjust this value to the desired font size
+
 
   // Add appropriate styling based on the fact's validity
-
   if (params.validity.includes("true")) {
-    // alert('true: \n' + params.fact)
     fact.style.backgroundColor = "#d4edda"; // Green for true
     fact.innerHTML = `
     <div style="display: flex; align-items: center;">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16" >
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-          <g>
-            <path style="fill:#010002;" d="M155.139,0C69.598,0,0,69.598,0,155.139c0,85.547,69.598,155.139,155.139,155.139
-              c85.547,0,155.139-69.592,155.139-155.139C310.277,69.598,240.686,0,155.139,0z M144.177,196.567L90.571,142.96l8.437-8.437
-              l45.169,45.169l81.34-81.34l8.437,8.437L144.177,196.567z"/>
-          </g>
-        </svg>
+      </svg>
       <strong>True</strong>
     </div>
     <div class="fact-detail" style="display: block;">
@@ -191,11 +219,10 @@ async function addFact(params) {
     </div>
   `;
   } else if (params.validity.includes("false")) {
-    //  alert('false: \n' + params.fact)
     fact.style.backgroundColor = "#f8d7da"; // Red for false
     fact.innerHTML = `
       <div style="display: flex; align-items: center;">
-<svg fill="#ff0017" width="16" height="16" viewBox="-1.7 0 20.4 20.4" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M16.406 10.283a7.917 7.917 0 1 1-7.917-7.917 7.916 7.916 0 0 1 7.917 7.917zM9.48 14.367a1.003 1.003 0 1 0-1.004 1.003 1.003 1.003 0 0 0 1.004-1.003zM7.697 11.53a.792.792 0 0 0 1.583 0V5.262a.792.792 0 0 0-1.583 0z"/></svg>
+        <svg fill="#ff0017" width="16" height="16" viewBox="-1.7 0 20.4 20.4" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M16.406 10.283a7.917 7.917 0 1 1-7.917-7.917 7.916 7.916 0 0 1 7.917 7.917zM9.48 14.367a1.003 1.003 0 1 0-1.004 1.003 1.003 1.003 0 0 0 1.004-1.003zM7.697 11.53a.792.792 0 0 0 1.583 0V5.262a.792.792 0 0 0-1.583 0z"/></svg>
         <strong>False</strong>
       </div>
       <div class="fact-detail" style="display: block;">
@@ -208,17 +235,9 @@ async function addFact(params) {
     return;
   }
 
-  // Expand box on click
-  // fact.onclick = function() {
-  //   let detail = fact.querySelector(".fact-detail");
-  //   if (detail.style.display === "none") {
-  //     detail.style.display = "block";
-  //     fact.style.height = "auto";
-  //   } else {
-  //     detail.style.display = "none";
-  //     fact.style.height = "80px"; // Set a fixed height or adjust as needed
-  //   }
-  // };
-
   factElement.appendChild(fact);
+
+  // Scroll to the bottom of the factElement after appending a new fact
+  factElement.scrollTop = factElement.scrollHeight;
 }
+
