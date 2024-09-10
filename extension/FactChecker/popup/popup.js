@@ -12,6 +12,12 @@ console.log("popup.js loaded");
                 chrome.tabs.sendMessage(tabs[0].id, {command: "toggleCaptions"});
             });
         }
+        else if(e.target.id == 'exportbutton') {
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+                chrome.tabs.sendMessage(tabs[0].id, {command: "export"});
+            });
+        }
     });
+    
 
 }

@@ -6,12 +6,35 @@ chrome.runtime.onMessage.addListener(function (message) {
   } else if (message.action === "toggleCaptions") {
     toggleCaptions();
   }
+  else if (message.command == 'export') {
+    exportdata()
+  }
 });
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
 
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+async function exportdata() {
+  let file = {
+    transcript: transcript,
+    claims: facts
+  }
+  let str = JSON.stringify(file);
+  download('data.json', str)
+} 
 let facts = [];
 let video;
 let subtitles;
-const host = "ws://localhost:3000";
+const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
 let transcript = "";
 let ws;
 let factElement;
@@ -62,9 +85,15 @@ async function activate() {
   setInterval(check, 1000);
 }
 
-function toggleCaptions() {
-  captionsVisible = !captionsVisible;
-}
+// function toggleCaptions() {
+//   if(captionsVisible){
+//     turnOffCaptions();
+//   }
+//   else{
+//     turnOffCaptions();
+//   }
+//   captionsVisible = !captionsVisible;
+// }
 
 
 function turnOffCaptions() {
@@ -82,7 +111,7 @@ function turnOnCaptions() {
   style.innerHTML = `
     .ytp-caption-segment {
       font-size: 15px !important;
-      opacity: 0 !important;
+      opacity: 50 !important;
     }
   `;
   document.head.appendChild(style);
@@ -177,7 +206,7 @@ async function check() {
 }
 
 let sent = 0;
-const CHUNK_SIZE = 500;
+const CHUNK_SIZE = 300;
 async function checkSend() {
   console.log(title);
   let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE);
@@ -234,10 +263,8 @@ async function addFact(params) {
     console.log("should not answer so didnt add thing");
     return;
   }
+  factElement.prepend(fact)
 
-  factElement.appendChild(fact);
 
-  // Scroll to the bottom of the factElement after appending a new fact
-  factElement.scrollTop = factElement.scrollHeight;
 }
 
