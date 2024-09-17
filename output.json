@@ -1,0 +1,2330 @@
+[
+    {
+        "statement": "I'm actually the only person on this stage who has a plan that is about lifting up the middle class and working people.",
+        "real": "true",
+        "ai": "false",
+        "source": "An opinion - should not answer"
+    },
+    {
+        "statement": "I intend on extending a tax cut for those families of $6000, which is the largest child tax credit we have given in a",
+        "real": "true",
+        "ai": "false",
+        "source": "An opinion - should not answer"
+    },
+    {
+        "statement": "We have a shortage of homes and housing.",
+        "real": "true",
+        "ai": "true",
+        "source": "NPR"
+    },
+    {
+        "statement": "The cost of housing is too expensive for far too many people.",
+        "real": "true",
+        "ai": "true",
+        "source": "Harvard Business Review"
+    },
+    {
+        "statement": "The current child tax credit is the largest we've given in a long time.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://www.whitehouse.gov/child-tax-credit/ - it has been 2k since 1997"
+    },
+    {
+        "statement": "The child tax credit will help families afford to buy a crib, a car seat, clothes for their children.",
+        "real": "true",
+        "ai": "true",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "His plan would result in $5 trillion.",
+        "real": "true",
+        "ai": "false",
+        "source": "Reuters"
+    },
+    {
+        "statement": "My mother raised my small businesses.",
+        "real": "true",
+        "ai": "false",
+        "source": "Today"
+    },
+    {
+        "statement": "My opponent's plan is to provide a tax cut for billionaires and big corporations.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://itep.org/corporate-taxes-before-and-after-the-trump-tax-law/ - trump has in the past"
+    },
+    {
+        "statement": "My opponent has a plan that I call the Trump Sales Tax, a 20% tax on everyday goods that you rely on to get through the day.",
+        "real": "true",
+        "ai": "false",
+        "source": "Forbes"
+    },
+    {
+        "statement": "Economists have said that Trump's sales tax would actually resolve for middle-class families in about $4000 more a year.",
+        "real": "false",
+        "ai": "false",
+        "source": "Market Watch"
+    },
+    {
+        "statement": "Other countries will pay the United States back after 75 years for what the US has done for the world.",
+        "real": "true",
+        "ai": "false",
+        "source": "Opinion"
+    },
+    {
+        "statement": "Families are paying $4000 more a year because of Trump's policies",
+        "real": "true",
+        "ai": "false",
+        "source": "https://www.investopedia.com/ask/answers/101314/what-does-current-cost-living-compare-20-years-ago.asp - cost of living has been rising, so while 4k a year is a reasonable guess."
+    },
+    {
+        "statement": "The tariff will be substantial in some cases.",
+        "real": "true",
+        "ai": "true",
+        "source": "Market Watch"
+    },
+    {
+        "statement": "Trump's policies and ideas are about middle-class people paying for tax cuts for billionaires",
+        "real": "true",
+        "ai": "false",
+        "source": "Center For American Progress"
+    },
+    {
+        "statement": "When I had it, I had tariffs and no inflation.",
+        "real": "true",
+        "ai": "false",
+        "source": "Center For American Progress"
+    },
+    {
+        "statement": "We have inflation like very few people have ever seen before.",
+        "real": "true",
+        "ai": "false",
+        "source": "Center For American Progress"
+    },
+    {
+        "statement": "Probably the worst in nations history.",
+        "real": "true",
+        "ai": "false",
+        "source": "Center For American Progress"
+    },
+    {
+        "statement": "We are doing tariffs on other countries.",
+        "real": "true",
+        "ai": "true",
+        "source": "foreignpolicy.com"
+    },
+    {
+        "statement": "China and other places are taking billions of dollars from the US.",
+        "real": "true",
+        "ai": "true",
+        "source": "United States Trade Representitive"
+    },
+    {
+        "statement": "Many things are 50, 60, 70, and 80% higher than a few years ago.",
+        "real": "true",
+        "ai": "true",
+        "source": "NBC"
+    },
+    {
+        "statement": "Towns throughout the United States are being taken over.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "People are pouring into our country from prison, jail, from mental institutions and from insane asylums.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Aurora, Colorado is being taken over.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "Springfield, Ohio is being taken over.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "They never took the tariff off.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://taxfoundation.org/research/all/federal/trump-tariffs-biden-tariffs/ - the tariffs mostly remained "
+    },
+    {
+        "statement": "They never took the tariff off.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://taxfoundation.org/research/all/federal/trump-tariffs-biden-tariffs/ - the tariffs mostly remained "
+    },
+    {
+        "statement": "What we have done is clean up Donald Trump Smith.",
+        "real": "true",
+        "ai": "false",
+        "source": "Doesn't make sense"
+    },
+    {
+        "statement": "What we have done is clean up Donald Trump Smith.",
+        "real": "true",
+        "ai": "false",
+        "source": "Doesn't make sense"
+    },
+    {
+        "statement": "What we have done is clean up Donald Trump Smith.",
+        "real": "true",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Donald Trump left us the worst public health epidemic in a century.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "Donald Trump left us the worst unemployment since the Great Depression.",
+        "real": "true",
+        "ai": "false",
+        "source": "USA Today"
+    },
+    {
+        "statement": "I haven't read it.",
+        "real": "true",
+        "ai": "true",
+        "source": "Shouldn't have answered"
+    },
+    {
+        "statement": "I have nothing to do with Russia",
+        "real": "false",
+        "ai": "false",
+        "source": "https://www.politico.com/magazine/story/2017/03/connections-trump-putin-russia-ties-chart-flynn-page-manafort-sessions-214868/ - trump has many ties to russia"
+    },
+    {
+        "statement": "We got hit with a pandemic.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "I have nothing to do with Project 2025.",
+        "real": "false",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "We got hit with a pandemic.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "This is a group of people that got together, came up with some ideas.",
+        "real": "true",
+        "ai": "true",
+        "source": "Project 2025"
+    },
+    {
+        "statement": "The only jobs they got were bounced back jobs",
+        "real": "false",
+        "ai": "false",
+        "source": "snopes"
+    },
+    {
+        "statement": "The economy and market were higher than they were before the pandemic.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart - it has been rising"
+    },
+    {
+        "statement": "Donald Trump's plan would exploit the deficit.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart - it has been rising"
+    },
+    {
+        "statement": "Not since 1917 where 100 million people died has there been anything like it.",
+        "real": "true",
+        "ai": "false",
+        "source": "Britannica"
+    },
+    {
+        "statement": "Goldman Sachs has said that Donald Trump's plan would make the economy worse.",
+        "real": "true",
+        "ai": "true",
+        "source": "The Hill"
+    },
+    {
+        "statement": "I created one of the greatest economies in the history of the country",
+        "real": "false",
+        "ai": "false",
+        "source": "ny1.com"
+    },
+    {
+        "statement": "By the middle of next year, it would invite a recession.",
+        "real": "false",
+        "ai": "false",
+        "source": "Opinion"
+    },
+    {
+        "statement": "The Vice President brought up your tears.",
+        "real": "false",
+        "ai": "true",
+        "source": "doesn't make sense "
+    },
+    {
+        "statement": "You responded.",
+        "real": "false",
+        "ai": "true",
+        "source": "doesnt make sense"
+    },
+    {
+        "statement": "His economic plan would increase inflation.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://abcnews.go.com/Business/harris-trump-debate-economists-assess-attacks-inflation-tariffs/story?id=113584629 - the tariffs will"
+    },
+    {
+        "statement": "I might double my plan to increase tariffs to 20% on goods coming into this country.",
+        "real": "true",
+        "ai": "true",
+        "source": "Trump himself, it's a claim."
+    },
+    {
+        "statement": "I might double my plan to increase tariffs to 20% on goods coming into this country.",
+        "real": "true",
+        "ai": "true",
+        "source": "Forbes"
+    },
+    {
+        "statement": "THEY WILL NOT HAVE HIGHER PRICES.",
+        "real": "false",
+        "ai": "false",
+        "source": "Goldman Sachs"
+    },
+    {
+        "statement": "The higher prices on gas and food will cost the typical family nearly $4000 a year.",
+        "real": "false",
+        "ai": "false",
+        "source": "abc new"
+    },
+    {
+        "statement": "Virtually no inflation.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "I had no inflation.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "People can buy cereal, bacon, eggs, or anything else.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "They had the highest inflation perhaps in the history of our country.",
+        "real": "false",
+        "ai": "false",
+        "source": "https://tradingeconomics.com/united-states/inflation-cpi"
+    },
+    {
+        "statement": "We will take in billions of dollars. Hundreds of billions of dollars.",
+        "real": "true",
+        "ai": "false",
+        "source": "wlos"
+    },
+    {
+        "statement": "80, 85, and even 90% of people thought the Trump economy was great.",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "THEIR ECONOMY WAS TERRIBLE.",
+        "real": "false",
+        "ai": "false",
+        "source": "https://tradingeconomics.com/united-states/inflation-cpi - trump had higher infaltion"
+    },
+    {
+        "statement": "THEIR ECONOMY WAS TERRIBLE.",
+        "real": "false",
+        "ai": "false",
+        "source": "BBC"
+    },
+    {
+        "statement": "The Trump administration resulted in a trade deficit.",
+        "real": "true",
+        "ai": "true",
+        "source": "Politico"
+    },
+    {
+        "statement": "Vice President Harris has argued there will be higher prices on gas and food.",
+        "real": "true",
+        "ai": "true",
+        "source": "forbes.com"
+    },
+    {
+        "statement": "The Trump administration resulted in one of the highest trade deficits in American history.",
+        "real": "true",
+        "ai": "true",
+        "source": "politico - it was large"
+    },
+    {
+        "statement": "We need to invest in American-based technologies.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "We need to win the race on AI quantum computing.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "We need to support America's workforce.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "We need to support computing.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "He invited trade wars.",
+        "real": "true",
+        "ai": "true",
+        "source": "Personal Institute for International Economics"
+    },
+    {
+        "statement": "Donald Trump's presidency ended up selling American ships to China to help them improve and modernize their navy",
+        "real": "true",
+        "ai": "false",
+        "source": "forbes.com"
+    },
+    {
+        "statement": "Donald Trump invited trade wars.",
+        "real": "true",
+        "ai": "true",
+        "source": "personal institute for international economics"
+    },
+    {
+        "statement": "Donald Trump thanked President Xi Jinping for what he did.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNBC.com"
+    },
+    {
+        "statement": "Donald Trump thanked President Xi Jinping for what he did.",
+        "real": "true",
+        "ai": "true",
+        "source": "true - wsj"
+    },
+    {
+        "statement": "President Xi Jinping did something",
+        "real": "true",
+        "ai": "true",
+        "source": "Objectively true"
+    },
+    {
+        "statement": "Donald Trump actually thanked President Xi Jinping.",
+        "real": "true",
+        "ai": "true",
+        "source": "WSJ"
+    },
+    {
+        "statement": "We hardly do Taiwan",
+        "real": "true",
+        "ai": "false",
+        "source": "doesn't make sense"
+    },
+    {
+        "statement": "Kamala Harris has changed her beliefs.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "XI WAS RESPONSIBLE FOR LACKING AND NOT GIVING US TRANSPARENCY ABOUT THE ORIGINS OF COVID.",
+        "real": "true",
+        "ai": "true",
+        "source": "nytimes"
+    },
+    {
+        "statement": "Everyone knows she is a Marxist.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Kamala Harris believed everything she believed three and four years ago.",
+        "real": "false",
+        "ai": "false",
+        "source": "newsweek"
+    },
+    {
+        "statement": "It is 21 million people, not 15 million.",
+        "real": "false",
+        "ai": "false",
+        "source": "it was only around 12k https://www.migrationpolicy.org/article/biden-three-immigration-record"
+    },
+    {
+        "statement": "Millions and millions of people are pouring in monthly.",
+        "real": "false",
+        "ai": "false",
+        "source": "cbp.gov"
+    },
+    {
+        "statement": "Her father is a Marxist professor in economics.",
+        "real": "true",
+        "ai": "false",
+        "source": "Economic Times"
+    },
+    {
+        "statement": "They have and she has destroyed our country with policy that's insane.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "Many of these people are criminals.",
+        "real": "false",
+        "ai": "false",
+        "source": "https://news.northwestern.edu/stories/2024/03/immigrants-are-significantly-less-likely-to-commit-crimes-than-the-us-born/ - oppsite"
+    },
+    {
+        "statement": "That's bigger than New York State, pouring in.",
+        "real": "false",
+        "ai": "false",
+        "source": "fact check"
+    },
+    {
+        "statement": "Trump said he would vote for a six-week abortion ban.",
+        "real": "true",
+        "ai": "true",
+        "source": "CBS news"
+    },
+    {
+        "statement": "YOU WERE ABLE TO KILL ROE V. WADE.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The plan is, as you know, the vote is, they have abortion in the ninth month.",
+        "real": "true",
+        "ai": "false",
+        "source": "doesn't make sense without context"
+    },
+    {
+        "statement": "The very next day, you will reverse course, saying you would vote to support the ban.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "We were able to do that.",
+        "real": "true",
+        "ai": "true",
+        "source": "Objectivly true"
+    },
+    {
+        "statement": "Trump initially said the six-week ban was too short.",
+        "real": "false",
+        "ai": "false",
+        "source": "Trump voiced support for a full ban"
+    },
+    {
+        "statement": "Her vice presidential pick says abortion in the ninth month is absolutely fine.",
+        "real": "false",
+        "ai": "false",
+        "source": "Star Tribune"
+    },
+    {
+        "statement": "States are voting on it for the first time.",
+        "real": "true",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "This is an issue that has torn our country apart.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "Our country has been apart for 52 years.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "The baby is born, no longer abortion because the baby is born is okay.",
+        "real": "false",
+        "ai": "true",
+        "source": "doesnt make sense"
+    },
+    {
+        "statement": "Every legal scholar, every Democrat, every Republican, liberal, conservative, they've all wanted this issue to be brought back.",
+        "real": "false",
+        "ai": "false",
+        "source": "doesn't make snese without context"
+    },
+    {
+        "statement": "There is no state in this country where it is legal to kill a baby after it's born.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "85% of Republicans believe in exceptions for incest and the life of the mother when it comes to abortion",
+        "real": "false",
+        "ai": "false",
+        "source": "Gallup news"
+    },
+    {
+        "statement": "There is no state in this country where it is legal to kill a baby after it's born.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "They (Trump and his administration) did exactly as they intended.",
+        "real": "true",
+        "ai": "true",
+        "source": "roe v Wade was overturned"
+    },
+    {
+        "statement": "Every legal scholar, every Democrat, every Republican, liberal, conservative, they've all wanted this issue to be brought back.",
+        "real": "false",
+        "ai": "false",
+        "source": "PBS"
+    },
+    {
+        "statement": "In over 20 states, there are Trump abortion bans, which make it harder for people to access abortion.",
+        "real": "true",
+        "ai": "true",
+        "source": "guttmacher insitutute"
+    },
+    {
+        "statement": "The government should not be telling a woman what to do with her body.",
+        "real": "false",
+        "ai": "true",
+        "source": "Opinion"
+    },
+    {
+        "statement": "Trump abortion bans make it criminal for a doctor or nurse to provide healthcare.",
+        "real": "true",
+        "ai": "true",
+        "source": "nytimes"
+    },
+    {
+        "statement": "They (Trump and his administration) intended to undo the protections of Roe v. Wade.",
+        "real": "true",
+        "ai": "true",
+        "source": "thehill.com"
+    },
+    {
+        "statement": "Pregnant women who want to carry to term are being denied care in emergency rooms.",
+        "real": "true",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Trump has abortion bans that make no exception for rape or incest.",
+        "real": "false",
+        "ai": "false",
+        "source": "kff"
+    },
+    {
+        "statement": "A 12 or 13-year-old survivor of incest being forced to carry a pregnancy to term is something they don't want.",
+        "real": "false",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "If Donald Trump were to be re-elected, he will sign a national abortion ban.",
+        "real": "false",
+        "ai": "false",
+        "source": "cnn"
+    },
+    {
+        "statement": "Healthcare providers are afraid to provide care to pregnant women in an emergency room because they are afraid they might go to jail.",
+        "real": "true",
+        "ai": "true",
+        "source": "NYT"
+    },
+    {
+        "statement": "Congress passes a bill to put back in place the protections of Roe v. Wade.",
+        "real": "true",
+        "ai": "false",
+        "source": "https://degette.house.gov/media-center/press-releases/democrats-introduce-legislation-restore-roe-v-wade"
+    },
+    {
+        "statement": "I'm not signing a ban.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "Certain freedoms, in particular, the ones to make decisions about one's own body, should not be made by the government.",
+        "real": "false",
+        "ai": "true",
+        "source": "Opinion"
+    },
+    {
+        "statement": "We got what every legal scholar wanted it.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Decisions about one's own body should not be made by the government.",
+        "real": "true",
+        "ai": "true",
+        "source": "Common view "
+    },
+    {
+        "statement": "The states are voting. It may take a little time, but...",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "This issue has torn our country apart for 52 years",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "I did something nobody thought was possible",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "THIS HAS BEEN TAKEN OVER BY THE STATES.",
+        "real": "true",
+        "ai": "true",
+        "source": "Roe v Wade made it a state decision "
+    },
+    {
+        "statement": "WON'T HAVE TO.",
+        "real": "false",
+        "ai": "true",
+        "source": "doesn't make sense"
+    },
+    {
+        "statement": "They wanted it back in the states",
+        "real": "true",
+        "ai": "true",
+        "source": "AP news"
+    },
+    {
+        "statement": "In his Project 2025, there would be a monitor that would be monitoring your pregnant is, your miscarriages.",
+        "real": "true",
+        "ai": "false",
+        "source": "project2025"
+    },
+    {
+        "statement": "Joe Biden spends all his time giving speeches.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "People who had to pay off their student loans would have lost to Trump",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "I WILL HAVE TO.",
+        "real": "false",
+        "ai": "true",
+        "source": "Doesn't make sense"
+    },
+    {
+        "statement": "ESPECIALLY NOW WITH ESSENTIALLY 50/50 IN BOTH THE SENATE AND THE HOUSE.",
+        "real": "false",
+        "ai": "true",
+        "source": "us website - leans towards republican by 9"
+    },
+    {
+        "statement": "Harris could not get student loans.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common sense"
+    },
+    {
+        "statement": "The Democrats didn't get student loans.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Now here in America is a woman carrying a pregnancy to term and asking for an abortion.",
+        "real": "true",
+        "ai": "false",
+        "source": "Common sense"
+    },
+    {
+        "statement": "JD Vance has said that you would veto a bill that would ban abortion after 15 weeks.",
+        "real": "true",
+        "ai": "true",
+        "source": "pbs.org"
+    },
+    {
+        "statement": "Nowhere in America is a woman carrying a pregnancy to term and asking for an abortion.",
+        "real": "false",
+        "ai": "false",
+        "source": "Moderator fact checked this during this debate"
+    },
+    {
+        "statement": "Couples who pray and dream of having a family are being denied IVF treatment.",
+        "real": "true",
+        "ai": "false",
+        "source": "House.gov"
+    },
+    {
+        "statement": "Working women who are working 1-2 jobs can barely afford childcare.",
+        "real": "true",
+        "ai": "true",
+        "source": "americanprogress.org"
+    },
+    {
+        "statement": "The economy was in a catastrophe before the coronavirus pandemic.",
+        "real": "false",
+        "ai": "false",
+        "source": "vox"
+    },
+    {
+        "statement": "People are having trouble affording healthcare.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "I have been a leader.",
+        "real": "false",
+        "ai": "true",
+        "source": "shoudln't have answered"
+    },
+    {
+        "statement": "This issue has been on the ballot in red and blue states.",
+        "real": "true",
+        "ai": "true",
+        "source": "KFF"
+    },
+    {
+        "statement": "The majority of Americans believe in a woman's right to make decisions about her own body.",
+        "real": "true",
+        "ai": "true",
+        "source": "Gallup"
+    },
+    {
+        "statement": "You could do abortions in the seventh month, the eighth month, the ninth month, and probably after birth.",
+        "real": "false",
+        "ai": "false",
+        "source": "axios"
+    },
+    {
+        "statement": "When they got a very negative decision, I saw the people of Alabama and legislature two days later, voting.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "President Biden posed tough new restrictions this past June.",
+        "real": "true",
+        "ai": "true",
+        "source": "white house .gov"
+    },
+    {
+        "statement": "The numbers have dropped significantly since then.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense "
+    },
+    {
+        "statement": "The Governor said, 'We put the baby aside, and then we determine what to do with the baby.'",
+        "real": "true",
+        "ai": "true",
+        "source": "Ralph Northam"
+    },
+    {
+        "statement": "I'm the only person on this stage who has prosecuted national organizations for terrorism.",
+        "real": "true",
+        "ai": "true",
+        "source": "Her job"
+    },
+    {
+        "statement": "Illegal border crossings reached a record high this past June.",
+        "real": "false",
+        "ai": "true",
+        "source": "CBS"
+    },
+    {
+        "statement": "The United States Congress, including some of the most conservative members, has prosecuted national organizations for the trafficking of drugs and human beings.",
+        "real": "true",
+        "ai": "true",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "The United States Congress has prosecuted national organizations for the trafficking of drugs and human beings.",
+        "real": "false",
+        "ai": "true",
+        "source": "CBS"
+    },
+    {
+        "statement": "Conservative members of the United States Senate came up with a border security bill that I supported.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The bill would have put 1500 more border agents on the border.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The administration waited for 6 months to act.",
+        "real": "true",
+        "ai": "true",
+        "source": "https://doggett.house.gov/media/blog-post/timeline-trumps-coronavirus-responses - they even took actions against people raising alarms"
+    },
+    {
+        "statement": "The bill would have put 1500 more border agents on the border",
+        "real": "true",
+        "ai": "true",
+        "source": "senate"
+    },
+    {
+        "statement": "VE ALLOWED US TO STEM THE FLOW OF FENTANYL COMING INTO THE STEM THE FLOW OF FENTANYL COMING INTO THE UNITED STATES. COMING INTO THE UNITED STATES.",
+        "real": "true",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "The surge of fentanyl in our country is a significant issue.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "Trump called up some folks in Congress and said 'kill the bill'.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "The proposed bill would have provided resources to address the fentanyl crisis.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "This comes at a time when the people need relief.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "He'd prefer to run on a problem instead of asking for a solution.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion "
+    },
+    {
+        "statement": "The people of our country need a leader who engages in solutions.",
+        "real": "false",
+        "ai": "true",
+        "source": "Opinion"
+    },
+    {
+        "statement": "The current president prefers to run on a problem instead of fixing it.",
+        "real": "false",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "I have been a leader on fertilization, IVF.",
+        "real": "true",
+        "ai": "true",
+        "source": "prospect.org"
+    },
+    {
+        "statement": "A bill was proposed that would have provided more resources to address the fentanyl crisis.",
+        "real": "true",
+        "ai": "true",
+        "source": "Senator Bob Casey"
+    },
+    {
+        "statement": "Trump does not talk about the people at his rallies.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Biden is paying people to go to his rallies.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense; no president would participate in bribery"
+    },
+    {
+        "statement": "People don't leave my rallies.",
+        "real": "false",
+        "ai": "false",
+        "source": "wall Street journal"
+    },
+    {
+        "statement": "People in Springfield, Illinois are eating dogs.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense; i wasnt there to eat anything"
+    },
+    {
+        "statement": "The people are eating the pets of the people that live there.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense "
+    },
+    {
+        "statement": "Millions and millions of people have come into our country",
+        "real": "false",
+        "ai": "true",
+        "source": "the time frame Trump implied is off - around only 12,000 estimated during  "
+    },
+    {
+        "statement": "They want to bring our country back.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "It's a very simple phrase.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "This is what's happening in our country.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "People start leaving Trump rallies early out of exhaustion and boredom.",
+        "real": "true",
+        "ai": "true",
+        "source": "multiple videos of this existt\\"
+    },
+    {
+        "statement": "It will end up being Venezuela",
+        "real": "false",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "If she becomes president, this country doesn't have a chance of success.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion "
+    },
+    {
+        "statement": "As far as rallies are concerned, they like what I say.",
+        "real": "true",
+        "ai": "true",
+        "source": "New York Times"
+    },
+    {
+        "statement": "The dog was eaten by the people that went there.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "There have been no credible reports of pets being harmed, injured, or abused by individuals within the emigrant community.",
+        "real": "true",
+        "ai": "false",
+        "source": "NBC - he's referring to the rally"
+    },
+    {
+        "statement": "The city manager told us there have been no credible reports of pets.",
+        "real": "false",
+        "ai": "true",
+        "source": "by the moderator"
+    },
+    {
+        "statement": "I ACTUALLY HAVE THE ENDORSEMENT OF 200 REPUBLICANS WHO",
+        "real": "true",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "NBC News did reach out to the city manager.",
+        "real": "true",
+        "ai": "true",
+        "source": "Should not have answered because it's a statement by the moderator"
+    },
+    {
+        "statement": "Trump's former Chief of Staff, John Kelly, has contempt for him",
+        "real": "false",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "Trump's former Chief of Staff is a four star general",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "I fired most of those people.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "The city manager says there is no evidence.",
+        "real": "true",
+        "ai": "true",
+        "source": "news week"
+    },
+    {
+        "statement": "Trump has the endorsement of 200 Republicans",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense; trump has more than 200 republicans who have voted for him"
+    },
+    {
+        "statement": "They never fired one person.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "The military has said they would never survive another Trump turn.",
+        "real": "false",
+        "ai": "false",
+        "source": "no source"
+    },
+    {
+        "statement": "Look at the inflation",
+        "real": "true",
+        "ai": "true",
+        "source": "bankrate.com"
+    },
+    {
+        "statement": "I got more votes than any Republican in history by far.",
+        "real": "false",
+        "ai": "true",
+        "source": "trump never won a popular vote "
+    },
+    {
+        "statement": "President Trump said he would use the National Guard",
+        "real": "true",
+        "ai": "true",
+        "source": "apnews"
+    },
+    {
+        "statement": "They didn't fire anybody having to do with Afghanistan, the Taliban, the 13 people who were just killed viciously and violently killed.",
+        "real": "false",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "They allowed criminals, millions of criminals!",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "They allowed tariffs, common",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense; all administrations do this"
+    },
+    {
+        "statement": "THIS WILL BE ONE OF THE GREATEST MISTAKES IN HISTORY.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "I got more votes than any sitting president in history, any sitting president in history, by far.",
+        "real": "false",
+        "ai": "true",
+        "source": "The election results - he got less than Biden."
+    },
+    {
+        "statement": "It's never been anything done like this at all.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "They are destroying the fabric of our country by what they've done.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "Crime is down all over the world.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common sense"
+    },
+    {
+        "statement": "Crime in this country is up through the roof.",
+        "real": "true",
+        "ai": "false",
+        "source": "crime rates dropped cnn"
+    },
+    {
+        "statement": "Trump has been found liable for sexual assault",
+        "real": "true",
+        "ai": "false",
+        "source": "https://apnews.com/article/trump-rape-carroll-trial-fe68259a4b98bb3947d42af9ec83d7db"
+    },
+    {
+        "statement": "818,000 jobs they said they created, turning out to be fraud",
+        "real": "false",
+        "ai": "false",
+        "source": "PBS"
+    },
+    {
+        "statement": "The FBI says overall, crime is down",
+        "real": "true",
+        "ai": "true",
+        "source": "ppic"
+    },
+    {
+        "statement": "Trump's next big court appearance is sentencing.",
+        "real": "true",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "Trump has been found liable for election interference",
+        "real": "true",
+        "ai": "false",
+        "source": "cnn"
+    },
+    {
+        "statement": "Trump was arraigned on 34 felony counts the day before the debate.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "Countries all over the world, it's way down.",
+        "real": "false",
+        "ai": "false",
+        "source": "PBS"
+    },
+    {
+        "statement": "We need to address the housing shortage.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "The Former Vice President called for the defunding of Federal Law Enforcement.",
+        "real": "true",
+        "ai": "false",
+        "source": "americanprogressaction"
+    },
+    {
+        "statement": "The Former Vice President called for the defunding of 45,000 federal law enforcement agents.",
+        "real": "false",
+        "ai": "false",
+        "source": "PBS"
+    },
+    {
+        "statement": "IT'S WEAPONIZATION. IT'S WEAPONIZATION. IT'S NEVER HAPPENED IN THIS COUNTRY.",
+        "real": "false",
+        "ai": "false",
+        "source": "trump was found guilty - AP news"
+    },
+    {
+        "statement": "Joe Biden was found essentially guilty.",
+        "real": "false",
+        "ai": "false",
+        "source": "NBC"
+    },
+    {
+        "statement": "The court recently ruled that the former president would essentially be immune from any misconduct if he were to enter the White House again.",
+        "real": "true",
+        "ai": "false",
+        "source": "sc did make this decision "
+    },
+    {
+        "statement": "The Supreme Court recently ruled that the former president has the right to block people on social media.",
+        "real": "false",
+        "ai": "true",
+        "source": "not a real statement made, shouldn't answer."
+    },
+    {
+        "statement": "The Supreme Court recently ruled that the former president has the right to block people on social media.",
+        "real": "false",
+        "ai": "true",
+        "source": "not a real statement made"
+    },
+    {
+        "statement": "Donald Trump is the current president of the United States.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Donald Trump has openly said that he would terminate the Constitution of the United States.",
+        "real": "true",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "In your last run for president, you said you wanted to ban fracking.",
+        "real": "true",
+        "ai": "true",
+        "source": "AP news "
+    },
+    {
+        "statement": "Donald Trump weaponized the Department of Justice against his political enemies.",
+        "real": "true",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "My values have not changed.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer"
+    },
+    {
+        "statement": "I will not ban fracking.",
+        "real": "true",
+        "ai": "true",
+        "source": "Harris herself"
+    },
+    {
+        "statement": "I will not ban fracking.",
+        "real": "true",
+        "ai": "true",
+        "source": "Harris herself"
+    },
+    {
+        "statement": "I have not banned fracking.",
+        "real": "true",
+        "ai": "true",
+        "source": "AP news"
+    },
+    {
+        "statement": "I was the tie-breaking vote on the Inflation Reduction Act.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "You supported decriminalizing border crossings.",
+        "real": "false",
+        "ai": "false",
+        "source": "pbs"
+    },
+    {
+        "statement": "We have got to invest in diverse sources of energy so we reduce our reliance on foreign energy.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "The United States cannot over-rely on foreign oil.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "The Inflation Reduction Act opened new leases.",
+        "real": "true",
+        "ai": "false",
+        "source": "us gov website"
+    },
+    {
+        "statement": "The United States has made progress in becoming more energy independent.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The United States needs to reduce its reliance on foreign oil.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "It is important to recognize the importance of energy independence.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion "
+    },
+    {
+        "statement": "The United States should reduce its dependence on foreign oil.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "The United States should invest in renewable energy sources.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "The United States should promote energy efficiency.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "The separation of families at the border is based on a value deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "The Atlantic"
+    },
+    {
+        "statement": "The separation of families at the border is based on a value deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "The Atlantic"
+    },
+    {
+        "statement": "The separation of families at the border is based on a value deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "The Atlantic"
+    },
+    {
+        "statement": "Everyone got handed $400 million on a silver platter and filed bankruptcy six times.",
+        "real": "true",
+        "ai": "false",
+        "source": "This is not a correct separation of the statement."
+    },
+    {
+        "statement": "The separation of families at the border is based on a value deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "The Atlantic"
+    },
+    {
+        "statement": "I was given $400 million.",
+        "real": "false",
+        "ai": "false",
+        "source": "The Atlantic"
+    },
+    {
+        "statement": "The separation of families at the border is based on a value that is deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "I was raised by a hard-working mother who worked, saves, and was able to buy our first home when I was a teenager.",
+        "real": "true",
+        "ai": "true",
+        "source": "abcnews.go.com"
+    },
+    {
+        "statement": "The separation of families at the border is based on a value that is deeply grounded in the importance of standing up for those that are most vulnerable.",
+        "real": "false",
+        "ai": "false",
+        "source": "didn't make sense"
+    },
+    {
+        "statement": "SHE WAS BIG ON DEFUNDING THE POLICE.",
+        "real": "false",
+        "ai": "true",
+        "source": "Fox News"
+    },
+    {
+        "statement": "Oil will be dead, fossil fuels will be dead.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Harris wanted to let criminals that killed people, that burned down Minneapolis go free",
+        "real": "false",
+        "ai": "false",
+        "source": "no evidence"
+    },
+    {
+        "statement": "We will go back to windmills and solar. They need a whole desert to get energy.",
+        "real": "false",
+        "ai": "false",
+        "source": "PBS"
+    },
+    {
+        "statement": "The day after the election, they would go back to destroying our country.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "Trump said he would be right there with his supporters at the Capitol.",
+        "real": "true",
+        "ai": "true",
+        "source": "Twitter - Donald Trump"
+    },
+    {
+        "statement": "Nobody on the other side killed. Shot by an out-of-control police officer that should have never, ever shot her.",
+        "real": "false",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "SHE WAS THE BORDER CZAR",
+        "real": "false",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "They come in from all over the world.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "I ASKED, WHAT ABOUT ALL THE PEOPLE POURING INTO OUR COUNTRY AND KILLING PEOPLE?",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Trump told supporters to march on the Capitol.",
+        "real": "true",
+        "ai": "true",
+        "source": "true - npr"
+    },
+    {
+        "statement": "Not to South America",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "People that burned down Seattle should be prosecuted.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "They've done a bad job.",
+        "real": "true",
+        "ai": "true",
+        "source": "Economic policy institute"
+    },
+    {
+        "statement": "I showed up for speeches.",
+        "real": "true",
+        "ai": "true",
+        "source": "National Archives"
+    },
+    {
+        "statement": "People that burned down Minneapolis should be prosecuted.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "It was a very big rally",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "I have nothing to do with that.",
+        "real": "false",
+        "ai": "false",
+        "source": "CNN"
+    },
+    {
+        "statement": "It wasn't done by me, it was done by others.",
+        "real": "true",
+        "ai": "true",
+        "source": "PBS"
+    },
+    {
+        "statement": "They rejected me",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "Crime rates are down all over the world because of it.",
+        "real": "false",
+        "ai": "false",
+        "source": "cnn"
+    },
+    {
+        "statement": "It was just two weeks ago",
+        "real": "false",
+        "ai": "true",
+        "source": "Should not have awnsered"
+    },
+    {
+        "statement": "I WASN'T RESPONSIBLE FOR SECURITY, NANCY PELOSI WAS RESPONSIBLE.",
+        "real": "false",
+        "ai": "false",
+        "source": "apnews"
+    },
+    {
+        "statement": "I was at the Capitol. I was the Vice President Elect",
+        "real": "true",
+        "ai": "true",
+        "source": "Politico"
+    },
+    {
+        "statement": "I said I would like to give you 10,000 soldiers",
+        "real": "true",
+        "ai": "true",
+        "source": "npc"
+    },
+    {
+        "statement": "I was the Vice President Elect and an Acting Senator",
+        "real": "true",
+        "ai": "true",
+        "source": "politico"
+    },
+    {
+        "statement": "The President of the United States incited a violent mob to attack our nation's capitol",
+        "real": "true",
+        "ai": "true",
+        "source": "BBC.com"
+    },
+    {
+        "statement": "Kamala Harris' daughter has a tape of her saying she is fully responsible for what happened.",
+        "real": "false",
+        "ai": "false",
+        "source": "FactCheck.org"
+    },
+    {
+        "statement": "THE FORMER PRESIDENT HAS BEEN INDICTED AND IMPEACHED FOR EXACTLY THAT REASON.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "There was a mob of people carrying Tiki torches, spewing anti-semitic hate.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "And some died.",
+        "real": "true",
+        "ai": "true",
+        "source": "Fact Check"
+    },
+    {
+        "statement": "SOME DIED.",
+        "real": "true",
+        "ai": "true",
+        "source": "factcheck.org"
+    },
+    {
+        "statement": "On that day, 140 law enforcement officers were injured.",
+        "real": "true",
+        "ai": "true",
+        "source": "justice "
+    },
+    {
+        "statement": "On January 6th, 2021, there was a riot at the US Capitol building.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "The former president said stand back and stand by to the Proud Boys",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The president at the time said they would assign people blame equally.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "The Proud Boys are a militia",
+        "real": "true",
+        "ai": "false",
+        "source": "cnn"
+    },
+    {
+        "statement": "The President of the United States has the right to close the border",
+        "real": "true",
+        "ai": "true",
+        "source": "Federal Law"
+    },
+    {
+        "statement": "It was debunked.",
+        "real": "true",
+        "ai": "true",
+        "source": "CBS"
+    },
+    {
+        "statement": "They have the right to do it. They don't need bills. They have the right to do it.",
+        "real": "true",
+        "ai": "false",
+        "source": "Executive orders "
+    },
+    {
+        "statement": "Many times saying you won",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "For 3 1/2 years after you watch the 2020 election, you repeatedly falsely claimed that you won",
+        "real": "true",
+        "ai": "true",
+        "source": "NBC News"
+    },
+    {
+        "statement": "Trump has said he won in a landslide many times.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "Trump has said he lost by a whisker.",
+        "real": "true",
+        "ai": "true",
+        "source": "NBC News"
+    },
+    {
+        "statement": "The President does not need a bill to close the border",
+        "real": "true",
+        "ai": "false",
+        "source": "whitehouse"
+    },
+    {
+        "statement": "THE MOST VOTES ANY SITTING PRESIDENT HAS EVER GOT. THAT'S WHAT I GOT PRESIDENT HAS EVER GOT. THAT'S WHAT I GOT IN 2016.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common sense; he won less than both Hillary and Biden"
+    },
+    {
+        "statement": "They have destroyed our energy business.",
+        "real": "false",
+        "ai": "false",
+        "source": "poltico - energy and oil rose "
+    },
+    {
+        "statement": "YOU LOST. YOU KNOW THIS. YOU KNOW THIS. YOU AND YOUR ALLIES, 60 CASES.",
+        "real": "false",
+        "ai": "false",
+        "source": "NBC"
+    },
+    {
+        "statement": "We have a nation in decline.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion "
+    },
+    {
+        "statement": "Trump believes he didn't lose the election",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense "
+    },
+    {
+        "statement": "President Biden won the election",
+        "real": "true",
+        "ai": "true",
+        "source": "White House"
+    },
+    {
+        "statement": "The President of the United States doesn't have standing.",
+        "real": "true",
+        "ai": "false",
+        "source": "Context is incorrect"
+    },
+    {
+        "statement": "They will be prosecuted to the fullest extent of the law.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "When I win, there are people who cheated.",
+        "real": "true",
+        "ai": "true",
+        "source": "NBC"
+    },
+    {
+        "statement": "Donald Trump was fired by 81 million people",
+        "real": "true",
+        "ai": "false",
+        "source": "True, this is a metaphor"
+    },
+    {
+        "statement": "I have traveled the world as Vice President of the United States.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "The president of the United States doesn't have standing in court.",
+        "real": "false",
+        "ai": "false",
+        "source": "congress.gov"
+    },
+    {
+        "statement": "Trump lost the election.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense/cnn"
+    },
+    {
+        "statement": "DONALD TRUMP WAS FIRED BY 81 MILLION PEOPLE.",
+        "real": "true",
+        "ai": "false",
+        "source": "Methaphor"
+    },
+    {
+        "statement": "I have talked with military leaders from around the world.",
+        "real": "true",
+        "ai": "true",
+        "source": "Obvious"
+    },
+    {
+        "statement": "Trump said he did not say he lost the election",
+        "real": "false",
+        "ai": "true",
+        "source": "trump did say he lost the election - pbs"
+    },
+    {
+        "statement": "The world was not blowing up three years ago.",
+        "real": "true",
+        "ai": "true",
+        "source": "Common Sense"
+    },
+    {
+        "statement": "Trump denies losing the election.",
+        "real": "true",
+        "ai": "true",
+        "source": "trump twitter"
+    },
+    {
+        "statement": "I ended the pipeline, and Biden put it back on day one.",
+        "real": "true",
+        "ai": "true",
+        "source": "apnews"
+    },
+    {
+        "statement": "People were afraid of Trump",
+        "real": "false",
+        "ai": "true",
+        "source": "should not be answering this"
+    },
+    {
+        "statement": "North Korea was afraid of him.",
+        "real": "false",
+        "ai": "false",
+        "source": "Politico"
+    },
+    {
+        "statement": "Biden put it back on day one.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "The pipeline is the biggest pipeline in the world.",
+        "real": "true",
+        "ai": "false",
+        "source": "cnn"
+    },
+    {
+        "statement": "I ended the pipeline",
+        "real": "true",
+        "ai": "true",
+        "source": "washingtonpost"
+    },
+    {
+        "statement": "We had no problems when Trump was president.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Joe Biden would be running for president instead of Kamala Harris if he had not been at the debate.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "Viktor Orban said Donald Trump is the most respected and feared person.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "He got 14 million votes, and they threw him out of office.",
+        "real": "true",
+        "ai": "false",
+        "source": "Not enough context"
+    },
+    {
+        "statement": "Trump let the Russians build a pipeline going all over Europe.",
+        "real": "true",
+        "ai": "true",
+        "source": "Atlantic council"
+    },
+    {
+        "statement": "He got 14 million votes.",
+        "real": "false",
+        "ai": "true",
+        "source": "Not enough context"
+    },
+    {
+        "statement": "She got zero votes.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "China was afraid of him.",
+        "real": "false",
+        "ai": "false",
+        "source": "China did test weapons during his presidency "
+    },
+    {
+        "statement": "Kamala Harris received no votes in the Democratic primary.",
+        "real": "false",
+        "ai": "false",
+        "source": "definitively false"
+    },
+    {
+        "statement": "They threw him out.",
+        "real": "false",
+        "ai": "true",
+        "source": "Not Enough Context"
+    },
+    {
+        "statement": "Israel has the right to defend itself.",
+        "real": "true",
+        "ai": "true",
+        "source": "common sense"
+    },
+    {
+        "statement": "An estimated 40,000 Palestinians are dead.",
+        "real": "true",
+        "ai": "false",
+        "source": "true, more up to date info. Check UNWRA counts."
+    },
+    {
+        "statement": "Palestinians have been killed.",
+        "real": "true",
+        "ai": "true",
+        "source": "al jazeera"
+    },
+    {
+        "statement": "Far too many innocent Palestinians have been killed.",
+        "real": "true",
+        "ai": "true",
+        "source": "AP News"
+    },
+    {
+        "statement": "Children, mothers.",
+        "real": "true",
+        "ai": "true",
+        "source": "Al Jazeera"
+    },
+    {
+        "statement": "We must chart for a two-state solution.",
+        "real": "false",
+        "ai": "true",
+        "source": "Opionion"
+    },
+    {
+        "statement": "We will continue to work around the clock.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion"
+    },
+    {
+        "statement": "I will always give Israel the ability to defend themselves.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion, shouldn't answer"
+    },
+    {
+        "statement": "We must have a solution where we can rebuild Gaza.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion, shouldn't answer"
+    },
+    {
+        "statement": "The Palestinians need to be given an opportunity to rebuild.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion, shouldn't answer"
+    },
+    {
+        "statement": "The Palestinians have security, self-determination, and the dignity that they so rightfully deserve.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion, shouldn't answer"
+    },
+    {
+        "statement": "The US should give Israel the ability to defend itself.",
+        "real": "false",
+        "ai": "true",
+        "source": "opinion/false"
+    },
+    {
+        "statement": "Iran and its proxies posed threats to Israel.",
+        "real": "true",
+        "ai": "true",
+        "source": "CBS"
+    },
+    {
+        "statement": "On October 7th, Hamas, a terrorist organization slaughtered 1200 Israeli.",
+        "real": "true",
+        "ai": "false",
+        "source": "true - barrons"
+    },
+    {
+        "statement": "If I were president, it would have never started",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion, shouldn't answer"
+    },
+    {
+        "statement": "If I were president, Russia would have never ever gone into Ukraine and killed millions",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "I know Putin very well.",
+        "real": "true",
+        "ai": "true",
+        "source": "Politico"
+    },
+    {
+        "statement": "Kamala Harris was at a sorority party.",
+        "real": "true",
+        "ai": "true",
+        "source": "Politico"
+    },
+    {
+        "statement": "Kamala Harris refused to meet with Benjamin Netanyahu when he went to Congress to give a speech.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "KILLED MILLIONS NEVER GONE INTO UKRAINE AND KILLED MILLIONS OF PEOPLE. KILLED MILLIONS OF PEOPLE.",
+        "real": "false",
+        "ai": "false",
+        "source": "Congress.gov"
+    },
+    {
+        "statement": "Kamala Harris hates Israel.",
+        "real": "false",
+        "ai": "false",
+        "source": "Wall Stree Journal"
+    },
+    {
+        "statement": "There was no threat of it either for 4 years.",
+        "real": "false",
+        "ai": "false",
+        "source": "Russia annexation of Crimea for example"
+    },
+    {
+        "statement": "Iran had no money for Hamas or Hezbollah under Donald Trump's sanctions.",
+        "real": "true",
+        "ai": "true",
+        "source": "sanction policy - technically kind of true"
+    },
+    {
+        "statement": "I would get the war with Ukraine and Russia settled and fast if I am president elect.",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Iran has $300 billion now because they took off all the sanctions that I had.",
+        "real": "true",
+        "ai": "true",
+        "source": "AP News"
+    },
+    {
+        "statement": "IRAN WAS BROKE, UNDER DONALD TRUMP, NOW IRAN HAS $300 BILLION IN CASH",
+        "real": "false",
+        "ai": "false",
+        "source": "definitively false/impossible to happen"
+    },
+    {
+        "statement": "Iran had no money for Hamas or Hezbollah",
+        "real": "false",
+        "ai": "false",
+        "source": "US Department of Treasury "
+    },
+    {
+        "statement": "Donald Trump is weak on national security and foreign policy.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "He says you hate Israel.",
+        "real": "false",
+        "ai": "true",
+        "source": "Bad Reasoning"
+    },
+    {
+        "statement": "It is well known that he admires dictators.",
+        "real": "true",
+        "ai": "true",
+        "source": "cnn"
+    },
+    {
+        "statement": "I will get it done before even becoming president.",
+        "real": "false",
+        "ai": "false",
+        "source": "Common sense - literally impossible "
+    },
+    {
+        "statement": "Trump said of Putin that he can do whatever he wants and going to Ukraine.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN.com"
+    },
+    {
+        "statement": "Military leaders who Donald Trump has worked with have told him he is a disgrace.",
+        "real": "true",
+        "ai": "true",
+        "source": "CNN"
+    },
+    {
+        "statement": "It is well known he exchanged love letters with Kim Jong Un.",
+        "real": "true",
+        "ai": "true",
+        "source": "poltico"
+    },
+    {
+        "statement": "It is well-known that he said when Russia went into Ukraine, it was brilliant.",
+        "real": "true",
+        "ai": "true",
+        "source": "Washington Post"
+    },
+    {
+        "statement": "Vice President Harris is consistently weak and wrong on national security.",
+        "real": "true",
+        "ai": "false",
+        "source": "opinion"
+    },
+    {
+        "statement": "She is the one that caused it that is weak on national security by allowing every nation, last month for the year, 168 different",
+        "real": "false",
+        "ai": "false",
+        "source": "common sense"
+    },
+    {
+        "statement": "Vice President Harris is consistently weak and wrong on the importance of upholding and respecting the military in the highest regard.",
+        "real": "true",
+        "ai": "false",
+        "source": "This statement was about trump, not harris"
+    },
+    {
+        "statement": "168 different countries sending people into our country",
+        "real": "false",
+        "ai": "false",
+        "source": "Pew Research Center"
+    },
+    {
+        "statement": "The Keystone Pipeline is the biggest pipeline in the world",
+        "real": "false",
+        "ai": "false",
+        "source": "Saudi Arabia E-W Pipeline"
+    },
+    {
+        "statement": "Biden paid a lot of money.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "This is a historic presidential debate.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS "
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS "
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The Keystone Pipeline is going to Germany",
+        "real": "false",
+        "ai": "false",
+        "source": "CBS"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "PUTIN ENDORSED HER LAST WEEK",
+        "real": "false",
+        "ai": "false",
+        "source": "cbs.com"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "The debate is taking place at the National Constitution Center in Philadelphia.",
+        "real": "false",
+        "ai": "true",
+        "source": "shouldn't answer this"
+    },
+    {
+        "statement": "Biden killed the Keystone Pipeline.",
+        "real": "true",
+        "ai": "true",
+        "source": "cbnc"
+    }
+]

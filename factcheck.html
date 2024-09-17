@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; justify-content: space-evenly; flex-direction: column;">
+        <h2> Statement: </h2>
+        <span id="statement" style="font-size: larger;">
+
+        </span>
+        <h1>Reason</h1>
+        <span id="reason" style="font-size: larger;">
+
+        </span>
+
+        <h2> AI's Determination: </h2>
+        <span id="determination" style="font-size: larger;">
+
+        </span>
+
+        <br>
+
+        <input type="text" id="source" style="padding: 15px; margin: 10px;" />
+        <div>
+            <button style="padding: 45px; background-color: blue;"id="true">
+                True
+            </button>
+            <button style="padding: 45px; background-color: red;" id="false">
+                False
+            </button>
+
+
+        </div>
+        <script>
+            try {
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.getElementById("false").addEventListener("click", async function () {
+                        let source = document.getElementById("source").value;
+                        let fact = await fetch('/verify', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                statement: document.getElementById("statement").innerText,
+                                real: "false",
+                                ai: document.getElementById("determination").innerText,
+                                source: document.getElementById("source").value
+                            })
+                        });
+                        getFact();
+                    });
+                    document.getElementById("true").addEventListener("click", async function () {
+                        let source = document.getElementById("source").value;
+                        let fact = await fetch('/verify', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                statement: document.getElementById("statement").innerText,
+                                real: "true",
+                                ai: document.getElementById("determination").innerText,
+                                source: document.getElementById("source").value
+                            })
+                        });
+                        getFact();
+                    });
+                });
+        } catch (e) {
+                window.alert(e);
+            }
+
+            async function getFact() {
+                let fact = await fetch('/getFact', {
+                    method: 'GET',
+                });
+                let obj = await fact.json();
+                document.getElementById("statement").innerText = obj.statement;
+                document.getElementById("determination").innerText = obj.validity;
+                document.getElementById("reason").innerText = obj.reason;
+            }
+            getFact();
+
+
+        </script>
+    </div>
+</body>
+
+</html>

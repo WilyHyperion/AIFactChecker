@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener(function (message) {
   if (message.command === "activate") {
     console.log("activated");
     activate();
-  } else if (message.action === "toggleCaptions") {
+  } else if (message.command === "toggleCaptions") {
     toggleCaptions();
   }
   else if (message.command == 'export') {
@@ -118,7 +118,7 @@ function turnOnCaptions() {
 }
 
 // Call the function to inject the CSS
-turnOffCaptions();
+//turnOffCaptions();
 function captionsVisible(){
   if(captionsVisible1 == false){
     turnOffCaptions();
