@@ -1,6 +1,6 @@
 # AIFactChecker
 This is a project for an Advanced CS assigment, and is unlikely to be updated. 
-Also, the repo contains a lot of junk files - ie the output files, which should be ignored
+Also, the repo contains a lot of junk files - ie the output files, which should be ignored 
 If you still want to run regardless
 
 
