@@ -1,4 +1,4 @@
-import youtube from "./youtube";
+
 import gemini from "./gemini";
 import Bun from "bun";
 import { appendFile } from "node:fs/promises";
@@ -40,9 +40,6 @@ const server = Bun.serve({
     if (path[0] == "factcheck" && request.method == "POST") {
       let body = await request.json();
       return new Response(await gemini.getResponse(body.statement));
-    }
-    if (path[0] == "youtube") {
-      return await youtube.getResponse("");
     }
     return new Response("lego fortnite");
   },

@@ -12,7 +12,7 @@ print(len(file))
 
 file = json.load(open('data.json'))['claims']
 print(len(file))
-quit()
+
 file = json.load(open('data.json'))['claims']
 
 
