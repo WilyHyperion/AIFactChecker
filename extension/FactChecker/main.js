@@ -57,6 +57,10 @@ async function activate() {
   ws.onopen = function () {
     console.log("connected");
   };
+  ws.onerror = function (e) {
+    console.log(e);
+    setErrorDisplay();
+  };
   ws.onmessage = function (event) {
     let json = JSON.parse(event.data);
     for (let v of json) {
@@ -81,7 +85,27 @@ async function activate() {
 
   // Append link element to HTML head
   head.appendChild(link);
+  //take control of subtitles button and ensure their on
+  let subbutton = document.querySelector(".ytp-subtitles-button");
+  if(subbutton.getAttribute("aria-pressed") == "false"){
+    subbutton.click();
+  }
+  let clone = subbutton.cloneNode(true);
+  subbutton.parentNode.replaceChild(clone, subbutton);
+  subbutton = clone;
 
+  subbutton.addEventListener("click", function (e) {
+    e.stopImmediatePropagation();
+    captionsVisible1 = !captionsVisible1;
+    captionsVisible();
+  })
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "c") {
+      captionsVisible1 = !captionsVisible1;
+      captionsVisible();
+      e.stopImmediatePropagation();
+    }
+  });
   // Create sidebar for facts
   createSidebar();
   setInterval(check, 1000);
@@ -99,7 +123,13 @@ async function activate() {
 
 
 function turnOffCaptions() {
+  console.log("turning off captions");
   const style = document.createElement('style');
+  document.querySelectorAll("#ytp-caption-window-container").forEach((e) => {
+    e.style.opacity = "0!important";
+    e.style.fontSize = "0px!important";
+    e.style.display = "hidden!important";
+  });
   style.innerHTML = `
     .ytp-caption-segment {
       font-size: 0px !important;
@@ -210,16 +240,27 @@ async function check() {
 let sent = 0;
 const CHUNK_SIZE = 300;
 async function checkSend() {
-  console.log(title);
   let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE);
-  console.log(sent);
-  console.log(toSend.length);
   if (toSend.length >= CHUNK_SIZE) {
+    try{
+      console.log(ws.readyState, 'state');
     ws.send(JSON.stringify({ title: title, data: toSend, long: transcript.substring(Math.max(0, sent - 3000), sent + CHUNK_SIZE) }));
+    }catch(e){
+      console.log("error");
+      setErrorDisplay();
+    }
     sent += CHUNK_SIZE;
   }
 }
-
+async function setErrorDisplay(params) {
+  console.log("error occured");
+  factElement.innerHTML = `
+  <div style="display: flex; align-items: center;">
+    <h1 style="color: red;">A factchecking error has occured. Please reload the page or try again later</h1>
+  </div>
+  `
+  factElement.style.backgroundColor = "rgba(255,0,0,0.1)";
+}
 async function addFact(params) {
   facts.push(params);
   let fact = document.createElement("div");
@@ -265,8 +306,6 @@ async function addFact(params) {
     console.log("should not answer so didnt add thing");
     return;
   }
-  factElement.prepend(fact)
-
-
+  factElement.prepend(fact);
 }
 

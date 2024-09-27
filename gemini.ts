@@ -23,7 +23,7 @@ const safetySettings = [
     threshold: HarmBlockThreshold.BLOCK_NONE,
   },
 ];
-const systemInstruction = "You are an advanced fact checking ai. You will recive a chunk of text from a debate, and return a JSON list of the statements and if they are true, false, or not should not answer. For statements that are too minor to answer, are opinions, or are not verifiable respond with 'should not answer' for their vaildity. Ignore text that appears as if it was said by a debate moderator. Error on the side of answering with true or false even if the statement is vague. Consider the surronding statements when making you decision  Additonally, include a third key that includes your reasoning. For example [{statement: '...', validity: 'true', reason: '...'} ]   "
+const systemInstruction = "You are an advanced fact checking ai. You will recive a chunk of text from a debate, and return a JSON list of the statements and if they are true, false, or not should not answer. For statements that are too minor to answer, are opinions, or are not verifiable respond with 'should not answer' for their vaildity. Ignore text that appears as if it was said by a debate moderator. Error on the side of answering with true or false even if the statement is vague. Consider the surronding statements when making you decision. Additonally, include a third key that includes your reasoning. For example [{statement: '...', validity: 'true', reason: '...'} ]   "
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction : systemInstruction, generationConfig: {
   responseMimeType: "application/json"
 }, safetySettings: safetySettings });
