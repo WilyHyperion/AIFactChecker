@@ -30,11 +30,13 @@ async function exportdata() {
   }
   let str = JSON.stringify(file);
   download('data.json', str)
-} 
+}
 let facts = [];
 let video;
 let subtitles;
-const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
+//todo change this back
+//const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
+const host = "ws://localhost:3000";
 let transcript = "";
 let ws;
 let factElement;
@@ -213,7 +215,7 @@ async function checkSend() {
   console.log(sent);
   console.log(toSend.length);
   if (toSend.length >= CHUNK_SIZE) {
-    ws.send(JSON.stringify({ title: title, data: toSend }));
+    ws.send(JSON.stringify({ title: title, data: toSend, long: transcript.substring(Math.max(0, sent - 3000), sent + CHUNK_SIZE) }));
     sent += CHUNK_SIZE;
   }
 }
