@@ -34,9 +34,8 @@ async function exportdata() {
 let facts = [];
 let video;
 let subtitles;
-//todo change this back
-//const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
-const host = "ws://localhost:3000";
+const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
+
 let transcript = "";
 let ws;
 let factElement;
