@@ -5,17 +5,19 @@ chrome.runtime.onMessage.addListener(function (message) {
     activate();
   } else if (message.command === "toggleCaptions") {
     toggleCaptions();
-  }
-  else if (message.command == 'export') {
-    exportdata()
+  } else if (message.command == "export") {
+    exportdata();
   }
 });
 function download(filename, text) {
-  var element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-  element.setAttribute('download', filename);
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  element.setAttribute("download", filename);
 
-  element.style.display = 'none';
+  element.style.display = "none";
   document.body.appendChild(element);
 
   element.click();
@@ -26,22 +28,26 @@ function download(filename, text) {
 async function exportdata() {
   let file = {
     transcript: transcript,
-    claims: facts
-  }
+    claims: facts,
+  };
   let str = JSON.stringify(file);
-  download('data.json', str)
+  download("data.json", str);
 }
 let facts = [];
 let video;
 let subtitles;
-const host = "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/";
-
+//todo change this back
+const hosts = [
+  "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/",
+  "wss://animated-giggle-gw54qp59wrqcgw6-3000.app.github.dev/",
+  "wss://didactic-winner-5w5wr994vxcp4x6-3000.app.github.dev/"
+];
 let transcript = "";
-let ws;
+
+let sockets = [];
 let factElement;
 let title;
 let captionsVisible1 = false;
-
 
 async function activate() {
   if (factElement) {
@@ -52,20 +58,28 @@ async function activate() {
   let videoslist = document.querySelectorAll("video");
 
   // Open a websocket connection
-  ws = new WebSocket(host);
-  ws.onopen = function () {
-    console.log("connected");
-  };
-  ws.onerror = function (e) {
-    console.log(e);
-    setErrorDisplay();
-  };
-  ws.onmessage = function (event) {
-    let json = JSON.parse(event.data);
-    for (let v of json) {
-      addFact(v);
-    }
-  };
+  for (let host of hosts) {
+    let wss = new WebSocket(host);
+    wss.onopen = function () {
+      console.log("connected");
+    };
+    wss.onerror = function (e) {
+      if(sockets.length == 1){
+        setErrorDisplay();
+      }
+      else {
+        console.log("error w/ socket", host);
+        sockets = sockets.filter((s) => s.url !== host);
+      }
+    };
+    wss.onmessage = function (event) {
+      let json = JSON.parse(event.data);
+      for (let v of json) {
+        addFact(v);
+      }
+    };
+    sockets.push(wss);
+  }
   video = videoslist[0];
   subtitles = document.querySelectorAll(".ytp-caption-segment");
 
@@ -86,7 +100,7 @@ async function activate() {
   head.appendChild(link);
   //take control of subtitles button and ensure their on
   let subbutton = document.querySelector(".ytp-subtitles-button");
-  if(subbutton.getAttribute("aria-pressed") == "false"){
+  if (subbutton.getAttribute("aria-pressed") == "false") {
     subbutton.click();
   }
   let clone = subbutton.cloneNode(true);
@@ -97,7 +111,7 @@ async function activate() {
     e.stopImmediatePropagation();
     captionsVisible1 = !captionsVisible1;
     captionsVisible();
-  })
+  });
   document.addEventListener("keydown", function (e) {
     if (e.key === "c") {
       captionsVisible1 = !captionsVisible1;
@@ -120,10 +134,9 @@ async function activate() {
 //   captionsVisible = !captionsVisible;
 // }
 
-
 function turnOffCaptions() {
   console.log("turning off captions");
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   document.querySelectorAll("#ytp-caption-window-container").forEach((e) => {
     e.style.opacity = "0!important";
     e.style.fontSize = "0px!important";
@@ -138,7 +151,7 @@ function turnOffCaptions() {
   document.head.appendChild(style);
 }
 function turnOnCaptions() {
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.innerHTML = `
     .ytp-caption-segment {
       font-size: 15px !important;
@@ -150,17 +163,13 @@ function turnOnCaptions() {
 
 // Call the function to inject the CSS
 //turnOffCaptions();
-function captionsVisible(){
-  if(captionsVisible1 == false){
+function captionsVisible() {
+  if (captionsVisible1 == false) {
     turnOffCaptions();
-  }
-  else{
+  } else {
     turnOnCaptions();
   }
 }
-
-
-
 
 let dragx, dragy, oldx, oldy;
 function move(e) {
@@ -235,29 +244,48 @@ async function check() {
   subtitles = document.querySelectorAll(".ytp-caption-segment");
   console.log("current transcript: " + transcript.substring(sent.length));
 }
-
+let lastindex = 0;
 let sent = 0;
 const CHUNK_SIZE = 300;
 async function checkSend() {
   let toSend = transcript.substring(Math.max(0, sent - 50), sent + CHUNK_SIZE);
   if (toSend.length >= CHUNK_SIZE) {
-    try{
-      console.log(ws.readyState, 'state');
-    ws.send(JSON.stringify({ title: title, data: toSend, long: transcript.substring(Math.max(0, sent - 3000), sent + CHUNK_SIZE) }));
-    }catch(e){
-      console.log("error");
+    try {
+      console.log(sockets[lastindex].readyState);
+      if(sockets[lastindex].readyState != 1){
+
+        sockets = sockets.filter((s) => s.readyState == 1);
+        if(sockets.length == 0){
+          setErrorDisplay();
+        }
+      }
+      sockets[lastindex].send(
+        JSON.stringify({
+          title: title,
+          data: toSend,
+          long: transcript.substring(
+            Math.max(0, sent - 3000),
+            sent + CHUNK_SIZE
+          ),
+        })
+      );
+      console.log(sockets)
+      lastindex = ((lastindex + 1) % sockets.length );
+      console.log(lastindex);
+    } catch (e) {
+      console.log(e);
       setErrorDisplay();
     }
     sent += CHUNK_SIZE;
   }
 }
-async function setErrorDisplay(params) {
+async function setErrorDisplay() {
   console.log("error occured");
   factElement.innerHTML = `
   <div style="display: flex; align-items: center;">
     <h1 style="color: red;">A factchecking error has occured. Please reload the page or try again later</h1>
   </div>
-  `
+  `;
   factElement.style.backgroundColor = "rgba(255,0,0,0.1)";
 }
 async function addFact(params) {
@@ -271,8 +299,7 @@ async function addFact(params) {
   fact.style.borderRadius = "5px";
   fact.style.boxShadow = "0 0 5px rgba(0,0,0,0.2)";
   fact.classList.add("fact-box");
-  fact.style.fontSize = "12px";  // Adjust this value to the desired font size
-
+  fact.style.fontSize = "12px"; // Adjust this value to the desired font size
 
   // Add appropriate styling based on the fact's validity
   if (params.validity.includes("true")) {
@@ -307,4 +334,3 @@ async function addFact(params) {
   }
   factElement.prepend(fact);
 }
-

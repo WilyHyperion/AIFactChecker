@@ -4,7 +4,7 @@ import Bun from "bun";
 import { appendFile } from "node:fs/promises";
 import { unlinkSync } from "node:fs";
 const factfile = await Bun.file('data.json').json();
-let index = 507; 
+let index = 507;
 let output = await Bun.file('output.json').json();
 console.log(factfile.claims.length)
 const server = Bun.serve({
@@ -55,9 +55,6 @@ const server = Bun.serve({
       })
     },
   },
-  
-
-
 });
 
 
