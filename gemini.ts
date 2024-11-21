@@ -1,5 +1,5 @@
 
-const UseGPT = true;
+const UseGPT = false;
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 import OpenAI from "openai";
 
