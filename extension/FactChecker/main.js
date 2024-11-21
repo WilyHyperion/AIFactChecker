@@ -38,9 +38,7 @@ let video;
 let subtitles;
 //todo change this back
 const hosts = [
-  "wss://super-meme-567qq96vwj9h7xqj-3000.app.github.dev/",
-  "wss://animated-giggle-gw54qp59wrqcgw6-3000.app.github.dev/",
-  "ws://localhost:3000"
+  "ws://localhost:3000",
 ];
 let transcript = "";
 
