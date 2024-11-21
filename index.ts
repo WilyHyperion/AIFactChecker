@@ -45,16 +45,31 @@ const server = Bun.serve({
   },
   websocket: {
     message(ws, msg) {
-      let data = JSON.parse(msg as any)
-      let title = data.title
-      let chunk = data.data;
-      console.log(title);
-      console.log(title)
-      gemini.getResponseBulk(chunk, title).then((p) => {
-      ws.send(p)
-      })
+      try {
+        const data = JSON.parse(msg as any);
+        const title = data.title;
+        const chunk = data.data;
+        console.log(title);
+        gemini.getResponseBulk(chunk, title)
+          .then((p) => {
+            try {
+              if (p && p.trim().length > 0) {
+                ws.send(p);
+              } else {
+                console.error("No content to send for WebSocket response.");
+                ws.send(JSON.stringify({ error: "Response content is empty or invalid." }));
+              }
+            } catch (sendError) {
+              console.error("Error sending WebSocket message:", sendError);
+              ws.send(JSON.stringify({ error: "Failed to send response." }));
+            }
+          })
+      } catch (parseError) {
+        console.error("Error parsing WebSocket message:", parseError);
+      }
     },
   },
+  
 });
 
 
