@@ -12,6 +12,7 @@
     "@distube/ytdl-core": "^4.14.4",
     "@google/generative-ai": "^0.17.1",
     "deepspeech": "^0.9.3",
+    "openai": "^4.73.0",
     "youtube-audio-stream": "^0.3.61",
     "yt-get": "^1.1.2"
   }

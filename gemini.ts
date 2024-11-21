@@ -1,10 +1,17 @@
+
+const UseGPT = true;
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
+import OpenAI from "openai";
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.API_GEMINI, 
 
 );
+const client = new OpenAI({
+  apiKey: process.env.API_GPT
+});
+
 const safetySettings = [
   {
     category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
@@ -57,9 +64,15 @@ export default {
     getResponse: getResponse,
     splitByStatement: splitByStatement,
     getResponseBulk: async (text: any, title : any) => {
-      
       try {
-        
+        if(UseGPT) {
+          const chatCompletion = await client.chat.completions.create({
+            messages: [{ role: 'system', content: systemInstruction + " The title of the video being factchecked is"  + title}, { role: 'user', content:  text }],
+            model: 'gpt-4o',
+          });
+          console.log(chatCompletion.choices[0].message.content)
+          return chatCompletion.choices[0].message.content
+        }
        let response = await model.generateContent(title + ":" + text)
 
       let r = response.response.text()
